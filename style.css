@@ -1,0 +1,14 @@
+html {
+	height: 50%;
+	width: 50%;
+  }
+  body {
+	  background-color: #ff3366;
+  }
+  header{
+    height: 0%;
+    width: 20%;
+  }
+  button{
+    width: 50%;
+  }

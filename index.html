@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <img src="cat.jpg" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Request</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>hey pretty</header>
+  <h1>Will you be my val?</h1>
+  <button id="yesButton">Yes</button>
+  <button id="noButton">No</button>
+  <script>
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+
+    // Replace 'page2.html' with the actual path to your page2.html
+    const page2Url = 'page2.html';
+
+    yesButton.addEventListener('click', () => {
+  const newWindow = window.open('', '_blank');
+  const imageUrl = 'cat.jpg';
+  const imageAlt = 'Cat';
+  const text = 'so where do we meet sweet heart.';
+
+  newWindow.document.write(`
+    <html>
+      <head>
+        <title>Image with text</title>
+      </head>
+      <body>
+        <div style="position: relative; display: inline-block;">
+          <img src="${imageUrl}" alt="${imageAlt}" style="width: 100%;">
+          <div style="position: absolute; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px; text-align: center;">
+            ${text}
+          </div>
+        </div>
+      </body>
+    </html>
+  `);
+});
+
+noButton.addEventListener('click', (no) => {
+  const newWindow = window.open('', '_blank');
+  const imageUrl = 'catwithgun.jpg';
+  const imageAlt = 'Cat with gun';
+  const text = 'go back and click yes.';
+
+  newWindow.document.write(`
+    <html>
+      <head>
+        <title>go back and click yes</title>
+      </head>
+      <body>
+        <div style="position: relative; display: inline-block;">
+          <img src="${imageUrl}" alt="${imageAlt}" style="width: 100%;">
+          <div style="position: absolute; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px; text-align: center;">
+            ${text}
+          </div>
+        </div>
+      </body>
+    </html>
+  `);
+});
+    // This script is unnecessary and won't work as intended
+    // window.onload = function() {
+    //   window.open(page2Url);
+    // };
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Feedback Page</title>
+</head>
+<body>
+  
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!-- Scripts should be placed at the end of the body tag or use async/defer attributes -->
+<!-- <script src="script.js"></script> -->
