@@ -3,7 +3,8 @@ html {
 	width: 50%;
   }
   body {
-	  background-color: #ff3366;
+    background-image: url('rose.jpg');
+    background-size: 100%;
   }
   header{
     height: 0%;
@@ -12,3 +13,8 @@ html {
   button{
     width: 50%;
   }
+  .modal-image { 
+   height: 3000%;
+   width: 3000%;
+ }
+
